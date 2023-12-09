@@ -1,5 +1,4 @@
 .container__small-card {
-  /* border: 1px solid white; */
   width: 500px;
 }
 .container__small-card__content{
@@ -10,16 +9,19 @@
   margin-top: 10px;
   margin-bottom: 10px;
 }
-
+.small-card__pic {
+  width: 40%;
+  display: flex;
+}
 .small-card__pic > img{
-  width: 200px;
+  width: 100%;
   min-width: 200px;
   margin-right: 20px;
-  /* margin-top:3px; */
 }
 .small-card__title {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 10px;
+  margin-left: 20px;
 }
