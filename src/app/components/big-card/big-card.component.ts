@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { dataFake } from '../../data/dataFake'
 
 @Component({
   selector: 'app-big-card',
@@ -7,13 +8,8 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class BigCardComponent implements OnInit {
   @Input()
-  photoCover: string=""
-  @Input()
-  cardTitle:string=""
-  @Input()
-  cardDescription:string=""
-  @Input()
   Id: string="0"
+  bigCard = dataFake.slice(-1)
 
   constructor() { }
 
