@@ -1,17 +1,17 @@
-<div class="container__big-card">
+<div class="container__big-card" *ngFor="let card of bigCard">
 
   <div class="big-card__pic">
     <img
-      src={{photoCover}}
-      alt={{cardTitle}}
+      src={{card.photo}}
+      alt={{card.title}}
       srcset=""
     >
   </div>
 
   <div class="big-card__title">
-    <h1><a [routerLink]="['content',Id]">{{cardTitle}}</a></h1>
+    <h1><a [routerLink]="['content',card.id]">{{card.title}}</a></h1>
   </div>
   <div class="big-card__description">
     <p>
-      <a href="#">{{cardDescription}}</a></p> </div>
+      <a href="#">{{card.description}}</a></p> </div>
 </div>
